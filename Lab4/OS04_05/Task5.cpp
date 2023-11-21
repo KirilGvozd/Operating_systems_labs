@@ -49,7 +49,7 @@ int main()
 
 	for (short i = 1; i <= 100; ++i)
 	{
-		if (i == 40)
+		if (i == 10)
 		{
 			TerminateThread(handleClild_T2, 0);
 		}
