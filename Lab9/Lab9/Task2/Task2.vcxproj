@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{0aac72d3-fe2c-4819-917e-06c9443005bc}</ProjectGuid>
+    <ProjectGuid>{6dbcca81-3d89-4c41-9491-db6a19aed5ec}</ProjectGuid>
     <RootNamespace>Task2</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -108,11 +108,6 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <FixedBaseAddress>true</FixedBaseAddress>
-      <RandomizedBaseAddress>false</RandomizedBaseAddress>
-      <EntryPointSymbol>
-      </EntryPointSymbol>
-      <BaseAddress>0x7777770000</BaseAddress>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">

@@ -6,7 +6,6 @@ using namespace std;
 #define PG (4 * KB)
 
 
-
 int main()
 {
     int pages = 256;
@@ -16,9 +15,9 @@ int main()
     cout << "Allocated " << pages * PG / 1024 << " KB of virtual memory." << endl;
 
     int* arr = (int*)xmemaddr;
-    for (int i = 0; i < countItems; i++)
+    for (int i = 0; i < countItems; i++) {
         arr[i] = i;
-
+    }
     /* Г = С3
        в = E2
        о = EE

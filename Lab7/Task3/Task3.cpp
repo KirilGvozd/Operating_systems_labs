@@ -16,15 +16,15 @@ int main()
 	{
 		if (!SetWaitableTimer(htimer, (LARGE_INTEGER*)&it, 3000, NULL, NULL, FALSE))
 		{
-			throw "Error to set waitable timer.";
+			throw "Error SetWaitableTimer";
 		}
 		if ((clock() - start) / CLOCKS_PER_SEC == 15)
 		{
-			cout << "Number of iterations: " << i << ", elapsed time is " << clock() - start << endl;
+			cout << "i = " << i << ", elapsed time is " << clock() - start << endl;
 			break;
 		}
 
-		cout << "Number of iterations: " << i << ", elapsed time is " << clock() - start << endl;
+		cout << "i = " << i << ", elapsed time is " << clock() - start << endl;
 		WaitForSingleObject(htimer, INFINITE);
 	}
 
